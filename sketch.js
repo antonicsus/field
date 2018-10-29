@@ -15,11 +15,7 @@ function AngleLine(x, y, angle) {
     if (angle) {
       this.angle = angle;
     }
-    var x1 = this.x + this.r*cos(this.angle);
-    var y1 = this.y + this.r*sin(this.angle);
-    var x2 = this.x + this.r*cos(this.angle+PI);
-    var y2 = this.y + this.r*sin(this.angle+PI);
-    line(x1, y1, x2, y2);
+    line(this.x + this.r*cos(this.angle), this.y + this.r*sin(this.angle), this.x + this.r*cos(this.angle+PI), this.y + this.r*sin(this.angle+PI));
   }
 }
 
